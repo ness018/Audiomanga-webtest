@@ -73,19 +73,24 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div
-        className="relative h-[400px] bg-hero-bg flex items-center justify-between px-8 md:px-16 overflow-hidden"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10h20v20H10zm30 0h20v20H40zm30 0h20v20H70zM10 40h20v20H10zm30 0h20v20H40zm30 0h20v20H70zM10 70h20v20H10zm30 0h20v20H40zm30 0h20v20H70z' fill='%23000' opacity='0.1'/%3E%3C/svg%3E")`,
-          backgroundSize: "60px 60px",
-        }}
-      >
-        {/* Manga panels pattern overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-4 left-4 w-16 h-20 border-2 border-white/30 rounded"></div>
-          <div className="absolute top-8 right-20 w-12 h-16 border-2 border-white/20 rounded"></div>
-          <div className="absolute bottom-8 left-20 w-20 h-12 border-2 border-white/25 rounded"></div>
-          <div className="absolute bottom-4 right-8 w-14 h-18 border-2 border-white/30 rounded"></div>
+      <div className="relative h-[400px] bg-hero-bg flex items-center justify-between px-8 md:px-16 overflow-hidden">
+        {/* Manga comic pattern background */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' opacity='0.3'%3E%3Crect x='10' y='10' width='25' height='20' stroke='%23ffffff' stroke-width='1' fill='none'/%3E%3Crect x='45' y='5' width='20' height='30' stroke='%23ffffff' stroke-width='1' fill='none'/%3E%3Crect x='5' y='45' width='30' height='15' stroke='%23ffffff' stroke-width='1' fill='none'/%3E%3Crect x='40' y='50' width='35' height='25' stroke='%23ffffff' stroke-width='1' fill='none'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: "120px 120px",
+          }}
+        ></div>
+
+        {/* Additional manga panel overlays */}
+        <div className="absolute inset-0 opacity-15">
+          <div className="absolute top-8 left-16 w-20 h-24 border border-white/40 rounded transform rotate-3"></div>
+          <div className="absolute top-12 right-32 w-16 h-20 border border-white/30 rounded transform -rotate-2"></div>
+          <div className="absolute bottom-12 left-32 w-24 h-16 border border-white/35 rounded transform rotate-1"></div>
+          <div className="absolute bottom-8 right-16 w-18 h-22 border border-white/40 rounded transform -rotate-1"></div>
+          <div className="absolute top-32 left-8 w-14 h-18 border border-white/25 rounded"></div>
+          <div className="absolute bottom-32 right-8 w-22 h-14 border border-white/30 rounded transform rotate-2"></div>
         </div>
 
         <div className="flex-1 max-w-lg z-10">
