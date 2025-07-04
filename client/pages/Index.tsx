@@ -10,6 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search } from "lucide-react";
+import { LuffyCharacter } from "@/components/LuffyCharacter";
 
 const chapters = [
   {
@@ -108,43 +109,8 @@ export default function Index() {
         </div>
 
         {/* Luffy Character */}
-        <div className="hidden md:block relative">
-          <div className="w-48 h-48 relative">
-            {/* Simplified Luffy illustration - using CSS shapes */}
-            <div className="absolute bottom-0 right-0">
-              {/* Hat */}
-              <div className="w-24 h-16 bg-yellow-400 rounded-full absolute -top-2 left-4 border-2 border-red-600"></div>
-              <div className="w-6 h-6 bg-red-600 rounded-full absolute top-2 left-8"></div>
-
-              {/* Face */}
-              <div className="w-20 h-20 bg-orange-200 rounded-full relative">
-                {/* Eyes */}
-                <div className="w-3 h-3 bg-black rounded-full absolute top-6 left-4"></div>
-                <div className="w-3 h-3 bg-black rounded-full absolute top-6 right-4"></div>
-                {/* Mouth */}
-                <div className="w-8 h-4 border-4 border-black border-t-0 rounded-b-full absolute bottom-4 left-6"></div>
-                {/* Scar */}
-                <div className="w-1 h-6 bg-red-600 absolute left-4 top-2"></div>
-              </div>
-
-              {/* Body */}
-              <div className="w-16 h-24 bg-red-500 absolute top-16 left-2 rounded-lg"></div>
-
-              {/* Arms */}
-              <div className="w-12 h-4 bg-orange-200 rounded-full absolute top-20 -left-8 rotate-45"></div>
-              <div className="w-12 h-4 bg-orange-200 rounded-full absolute top-24 right-12 -rotate-45"></div>
-
-              {/* Fist pointing */}
-              <div className="w-6 h-6 bg-orange-200 rounded-full absolute top-8 right-16"></div>
-
-              {/* Shorts */}
-              <div className="w-14 h-12 bg-blue-600 absolute top-36 left-3 rounded"></div>
-
-              {/* Legs */}
-              <div className="w-4 h-16 bg-orange-200 absolute top-44 left-5"></div>
-              <div className="w-4 h-16 bg-orange-200 absolute top-44 left-11"></div>
-            </div>
-          </div>
+        <div className="hidden lg:block relative">
+          <LuffyCharacter />
         </div>
       </div>
 
