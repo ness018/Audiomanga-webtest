@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "hero-bg": "hsl(var(--hero-background))",
+        "manga-red": "hsl(var(--manga-red))",
+        "status-green": {
+          DEFAULT: "hsl(var(--status-green))",
+          foreground: "hsl(var(--status-green-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
