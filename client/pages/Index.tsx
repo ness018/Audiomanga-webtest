@@ -73,7 +73,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative h-[400px] bg-hero-bg flex items-center justify-between px-8 md:px-16 overflow-hidden">
+      <div className="relative min-h-[400px] lg:h-[400px] bg-hero-bg flex flex-col lg:flex-row items-center justify-between px-8 md:px-16 py-8 lg:py-0 overflow-hidden">
         {/* Manga comic pattern background */}
         <div
           className="absolute inset-0 opacity-10"
@@ -93,16 +93,16 @@ export default function Index() {
           <div className="absolute bottom-32 right-8 w-22 h-14 border border-white/30 rounded transform rotate-2"></div>
         </div>
 
-        <div className="flex-1 max-w-lg z-10">
+        <div className="flex-1 max-w-lg z-10 text-center lg:text-left">
           <Badge className="mb-4 bg-gray-700 text-white hover:bg-gray-600 text-xs px-3 py-1 rounded-full">
             AUDIO MANGA MAYONESO
           </Badge>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
             La experiencia del manga a otro nivel
           </h1>
 
-          <p className="text-gray-300 text-lg mb-6 max-w-md">
+          <p className="text-gray-300 text-base md:text-lg mb-6 max-w-md mx-auto lg:mx-0">
             El manga de one piece con efectos de sonido y bandas sonoras.
             Descubre una nueva forma de leer la apasionante obra de Eiichiro
             Oda.
@@ -114,8 +114,10 @@ export default function Index() {
         </div>
 
         {/* Luffy Character */}
-        <div className="hidden lg:block relative">
-          <LuffyCharacter />
+        <div className="relative mt-8 lg:mt-0">
+          <div className="scale-75 lg:scale-100">
+            <LuffyCharacter />
+          </div>
         </div>
       </div>
 
@@ -153,16 +155,16 @@ export default function Index() {
           <Table>
             <TableHeader>
               <TableRow className="bg-black hover:bg-black">
-                <TableHead className="text-white font-semibold py-4">
+                <TableHead className="text-white font-semibold py-4 text-left">
                   Título
                 </TableHead>
-                <TableHead className="text-white font-semibold">
+                <TableHead className="text-white font-semibold text-left">
                   Número
                 </TableHead>
-                <TableHead className="text-white font-semibold">
+                <TableHead className="text-white font-semibold text-left">
                   Estado
                 </TableHead>
-                <TableHead className="text-white font-semibold">
+                <TableHead className="text-white font-semibold text-left">
                   Acciones
                 </TableHead>
               </TableRow>
